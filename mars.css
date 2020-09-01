@@ -1,0 +1,234 @@
+/* --------------- GENERAL PAGE CSS BEGINS HERE --------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-image: url("surface.jpg");
+	background-size: 100vh;
+	font-family: 'Noto Sans SC', sans-serif;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+	background-size: cover;
+	display: grid;
+	grid-template-rows: 2fr 1fr;
+	height: 100vh;
+	width: 100vw;
+}
+hr {
+	border-color: rgb(60, 60, 60);
+}
+p {
+	font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
+	line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300)));
+}
+.temp-text {
+	font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (1600 - 300)));
+}
+/* --------------- GENERAL PAGE CSS ENDS HERE --------------- */
+
+
+
+/* --------------- TODAY'S TEMPERATURE CSS BEGINS HERE --------------- */
+#sol-6 p {
+	color: white;
+	padding-right: 1vw;
+	font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1600 - 300)));
+	text-align: left;
+}
+#sol-max-6, #sol-min-6 {
+	color: white;
+}
+#smax6, #smin6 {
+	display: flex;
+	justify-content: flex-end;
+	font-size: calc(22px + (30 - 22) * ((100vw - 300px) / (1600 - 300)));
+}
+#newest {
+	height: 40%;
+	width: 10vw;
+}
+#s6 {
+	margin-bottom: 0px;
+}
+#d6 {
+	margin-top: 0px;
+}
+.recent-temp {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 5%;
+	color: white;
+	font-size: calc(20px + (28 - 20) * ((100vw - 300px) / (1600 - 300)));
+}
+.top-of-page {
+	margin: 2%;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-content: flex-end;
+}
+.info {
+	font-size: .8em;
+	margin-top: 3vh;
+	text-align: right;
+}
+/* --------------- TODAY'S TEMPERATURE CSS ENDS HERE --------------- */
+
+
+
+/* --------------- PAST WEEK'S TEMPERATURE CSS BEGINS HERE --------------- */
+#temperature {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-around;
+	margin-bottom: 5vh;
+}
+#sol-0, #sol-1, #sol-2, #sol-3, #sol-4, #sol-5 {
+	/* font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300))); */
+	margin-top: 0.5vw;
+}
+.sol-weather {
+	height: 90%;
+	width: 14%;
+	background-color: rgba(255, 255, 255, 0.452);
+	/* border-radius: 10px; */
+}
+.sol-info {
+	padding: 1vw;
+	text-align: center;
+}
+.sol-header{
+	font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
+	margin-bottom: 0px;
+}
+.day-header{
+	font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
+	margin-top: 0px;
+	margin-bottom: .5vw;
+}
+.temp-text {
+	text-align: left;
+	padding-left: 12%;
+}
+/* --------------- PAST WEEK'S TEMPERATURE CSS ENDS HERE --------------- */
+
+
+
+/* --------------- TEMPERATURE CHANGE BUTTON CSS BEGINS HERE --------------- */
+.recent-temp button {
+	background-color: transparent;
+	border: white solid 1px;
+	cursor: pointer;
+	padding: 1vw;
+	color:  white;
+	font-size: calc(22px + (30 - 22) * ((100vw - 300px) / (1600 - 300)));
+	margin-top: 2vw;
+}
+.toggle-on {
+	font-size: calc(24px + (32 - 24) * ((100vw - 300px) / (1600 - 300)));
+}
+.toggle-off {
+	color: rgb(138, 138, 138);
+	font-size: calc(14px + (22 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+button:hover {
+	background-color: white;
+	color: black;
+}
+/* --------------- TEMPERATURE CHANGE BUTTON CSS ENDS HERE --------------- */
+
+
+
+/* MOBILE MEDIA QUERIES -------- BEGIN -------- MOBILE MEDIA QUERIES */
+@media only screen and (max-width: 736px) {
+	#temperature {
+		display: grid;
+		grid-template-columns: 1fr;
+		/* width: 80%; */
+	}
+	.temp-text {
+		font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
+	}
+	.sol-weather {
+		width: 70%;
+		margin: auto;
+		margin-bottom: 10%;
+		background-color: rgba(255, 255, 255, 0.452);
+	}
+	.top-of-page {
+		margin: 5%;
+		display: initial;
+	}
+	#newest {
+		display: inline;
+	}
+	.info {
+		display: none;
+	}
+	#smax6, #smin6 {
+		display: flex;
+		justify-content: space-between;
+		width: 50%;
+		margin-left: 50%;
+	}
+	.recent-temp {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.temp-text{
+		text-align: center;
+		margin-right: 12%;
+	}
+	#sol-0, #sol-1, #sol-2, #sol-3, #sol-4, #sol-5 {
+		margin-top: 6%;
+	}
+}
+/* MOBILE MEDIA QUERIES -------- END -------- MOBILE MEDIA QUERIES */
+
+
+
+/* TABLET MEDIA QUERIES -------- BEGIN -------- TABLET MEDIA QUERIES */
+@media only screen and (max-width: 1112px) and (min-width: 737px) {
+	#temperature {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		/* width: 80%; */
+	}
+	.temp-text {
+		font-size: calc(18px + (26 - 18) * ((100vw - 300px) / (1600 - 300)));
+	}
+	.sol-weather {
+		width: 80%;
+		margin: auto;
+		margin-bottom: 10%;
+		background-color: rgba(255, 255, 255, 0.452);
+	}
+	.top-of-page {
+		margin: 5%;
+		display: initial;
+	}
+	#newest {
+		display: inline;
+	}
+	.info {
+		display: none;
+	}
+	#smax6, #smin6 {
+		display: flex;
+		justify-content: space-between;
+		width: 26%;
+		margin-left: 70%;
+	}
+	.recent-temp {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.temp-text{
+		text-align: center;
+		margin-right: 12%;
+	}
+}
+/* TABLET MEDIA QUERIES -------- END -------- TABLET MEDIA QUERIES */

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Mars</title>
+	<link rel="stylesheet" type="text/css" href="/mars.css">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="top-of-page">
+		<div id="newest">
+			<p class="recent-temp" id="s6"></p>
+			<p class="recent-temp" id="d6"></p>
+			<div id="sol-6">
+				<div id="smax6"><p>Max: </p><span id="sol-max-6"></span></div>
+				<div id="smin6"><p>Min: </p><span id="sol-min-6"></span></div>
+			</div>
+			<span class="recent-temp"><button onclick="convertTemp()"><span class="toggle-on">°C</span> / <span class="toggle-off">°F</span></button></span>
+			<p class="info"><a style="color:white; text-decoration: none;" href="">Data provided by NASA's InSight weather station on Mars.</a></p>
+		</div>
+	</div>
+	<div id="temperature">
+		<div class="sol-weather">
+			<div class="sol-info">
+				<h2 id="s5" class="sol-header"></h2>
+				<p id="d5" class="day-header"></p>
+				<hr>
+				<div id="sol-5">
+					<p class="temp-text">Max: <span id="sol-max-5"></span></p>
+					<p class="temp-text">Min: <span id="sol-min-5"></span></p>
+				</div>
+			</div>
+		</div>
+		<div class="sol-weather">
+			<div class="sol-info">
+				<h2 id="s4" class="sol-header"></h2>
+				<p id="d4" class="day-header"></p>
+				<hr>
+				<div id="sol-4">
+					<p class="temp-text">Max: <span id="sol-max-4"></span></p>
+					<p class="temp-text">Min: <span id="sol-min-4"></span></p>
+				</div>
+			</div>
+		</div>
+		<div class="sol-weather">
+			<div class="sol-info">
+				<h2 id="s3" class="sol-header"></h2>
+				<p id="d3" class="day-header"></p>
+				<hr>
+				<div id="sol-3">
+					<p class="temp-text">Max: <span id="sol-max-3"></span></p>
+					<p class="temp-text">Min: <span id="sol-min-3"></span></p>
+				</div>
+			</div>
+		</div>
+		<div class="sol-weather">
+			<div class="sol-info">
+				<h2 id="s2" class="sol-header"></h2>
+				<p id="d2" class="day-header"></p>
+				<hr>
+				<div id="sol-2">
+					<p class="temp-text">Max: <span id="sol-max-2"></span></p>
+					<p class="temp-text">Min: <span id="sol-min-2"></span></p>
+				</div>
+			</div>
+		</div>
+		<div class="sol-weather">
+			<div class="sol-info">
+				<h2 id="s1" class="sol-header"></h2>
+				<p id="d1" class="day-header"></p>
+				<hr>
+				<div id="sol-1">
+					<p class="temp-text">Max: <span id="sol-max-1"></span></p>
+					<p class="temp-text">Min: <span id="sol-min-1"></span></p>
+				</div>
+			</div>
+		</div>
+		<div class="sol-weather">
+			<div class="sol-info">
+				<h2 id="s0" class="sol-header"></h2>
+				<p id="d0" class="day-header"></p>
+				<hr>
+				<div id="sol-0">
+					<p class="temp-text">Max: <span id="sol-max-0"></span></p>
+					<p class="temp-text">Min: <span id="sol-min-0"></span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+<script type="text/javascript" src="/mars.js"></script>
+</body>
+</html>
