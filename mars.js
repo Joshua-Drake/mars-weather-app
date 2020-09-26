@@ -3,8 +3,7 @@ let degree = 'c';
 const monthList = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ];
 
 async function getMarsWeather() {
-	// const weatherReport = await fetch('https://api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0');
-	const weatherReport = await fetch('/data.json');
+	const weatherReport = await fetch('https://api.nasa.gov/insight_weather/?api_key=3aBOkQAgaee7VbKrmX39LhYJWDvS3le1N18fADWQ&feedtype=json&ver=1.0');
 	temp = await weatherReport.json();
 	sols = temp.sol_keys.length - 1;
 	updateUI();
